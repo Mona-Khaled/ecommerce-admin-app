@@ -1,0 +1,72 @@
+.orderTrack {
+  width: 500px;
+  display: flex;
+}
+.orderStatus {
+  width: 33.33%;
+  height: 5px;
+  background: #777;
+  position: relative;
+  font-size: 12px;
+}
+.orderStatus.active {
+  background: #26a541;
+}
+.orderStatus:last-child {
+  width: 0;
+}
+.orderStatus .point {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 8px;
+  background-color: #777;
+  top: -5px;
+}
+.orderStatus .point.active {
+  background-color: #26a541;
+}
+.orderInfo {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: -26px;
+  transform: translateX(-50%);
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.value {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.confirmBtn {
+  background-color: royalblue;
+}
+
+.confirmBtn {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #45CD8D;
+  text-align: center;
+  transition: all 0.15s;
+}
+.confirmBtn:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #ffffff;
+  border-color: #ffffff;
+}
